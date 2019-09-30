@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="501e3269-a620-431f-a30f-d14cc37e20bc" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="241" />
+  </component>
+  <component name="ProjectId" id="1RHHnB0vh4uqavKFq4WdtwrZ7ED" />
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="ignore.virus.scanning.warn.message" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.All in PL2_Generics_initial (1)">
+    <configuration name="All in PL2_Generics_initial (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PL2_Generics_initial" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in PL2_Generics_initial" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PL2_Generics_initial" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InvoiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PL2_Generics_initial" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="esinf.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="esinf" />
+      <option name="MAIN_CLASS_NAME" value="esinf.InvoiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PL2_Generics_initial" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="esinf.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="esinf" />
+      <option name="MAIN_CLASS_NAME" value="esinf.ProductTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SupermarketTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PL2_Generics_initial" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="esinf.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="esinf" />
+      <option name="MAIN_CLASS_NAME" value="esinf.SupermarketTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in PL2_Generics_initial (1)" />
+        <item itemvalue="JUnit.All in PL2_Generics_initial" />
+        <item itemvalue="JUnit.SupermarketTest" />
+        <item itemvalue="JUnit.ProductTest" />
+        <item itemvalue="JUnit.InvoiceTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="501e3269-a620-431f-a30f-d14cc37e20bc" name="Default Changelist" comment="" />
+      <created>1569317266000</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569317266000</updated>
+      <workItem from="1569317267754" duration="5041000" />
+      <workItem from="1569330176105" duration="115000" />
+      <workItem from="1569330631155" duration="93000" />
+      <workItem from="1569330881654" duration="181000" />
+      <workItem from="1569364831081" duration="65000" />
+      <workItem from="1569364977205" duration="605000" />
+      <workItem from="1569365611012" duration="62000" />
+      <workItem from="1569365697529" duration="86000" />
+      <workItem from="1569365810421" duration="43000" />
+      <workItem from="1569365906202" duration="58000" />
+      <workItem from="1569365985357" duration="236000" />
+      <workItem from="1569403163983" duration="199000" />
+      <workItem from="1569408495497" duration="2782000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/PL2_Generics_initial$SupermarketTest.ic" NAME="SupermarketTest Coverage Results" MODIFIED="1569365369747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>esinf.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/PL2_Generics_initial$All_in_PL2_Generics_initial.ic" NAME="All in PL2_Generics_initial Coverage Results" MODIFIED="1569365390141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

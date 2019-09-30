@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c38597d2-173f-4da9-b2cd-00fcff291832" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1RF9KftTohbc4xEAZmUM1TUvlf2" />
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.PriorityBufferPrinterTest.testGetDocument">
+    <configuration name="PriorityBufferPrinterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TP2_Generics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="esinf.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="esinf" />
+      <option name="MAIN_CLASS_NAME" value="esinf.PriorityBufferPrinterTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PriorityBufferPrinterTest.testDelDocumentsAbove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TP2_Generics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="esinf.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="esinf" />
+      <option name="MAIN_CLASS_NAME" value="esinf.PriorityBufferPrinterTest" />
+      <option name="METHOD_NAME" value="testDelDocumentsAbove" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PriorityBufferPrinterTest.testGetDocument" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TP2_Generics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="esinf.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="esinf" />
+      <option name="MAIN_CLASS_NAME" value="esinf.PriorityBufferPrinterTest" />
+      <option name="METHOD_NAME" value="testGetDocument" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.PriorityBufferPrinterTest.testGetDocument" />
+        <item itemvalue="JUnit.PriorityBufferPrinterTest.testDelDocumentsAbove" />
+        <item itemvalue="JUnit.PriorityBufferPrinterTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c38597d2-173f-4da9-b2cd-00fcff291832" name="Default Changelist" comment="" />
+      <created>1569251914956</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569251914956</updated>
+      <workItem from="1569251918518" duration="2879000" />
+      <workItem from="1569255255572" duration="183000" />
+      <workItem from="1569256764319" duration="98000" />
+      <workItem from="1569256893541" duration="94000" />
+      <workItem from="1569270139948" duration="198000" />
+      <workItem from="1569270365576" duration="738000" />
+      <workItem from="1569271343149" duration="3653000" />
+      <workItem from="1569316910315" duration="24000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/esinf/PriorityBufferPrinterTest.java</url>
+          <line>99</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/esinf/PriorityBufferPrinterTest.java</url>
+          <line>100</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
