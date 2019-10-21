@@ -26,7 +26,7 @@ public class GraphAlgorithms {
 
         LinkedList<V> qbfs = new LinkedList<>();
         ArrayList<V> qaux = new ArrayList<>();
-        boolean visited[] = new boolean[g.numVertices()];
+        boolean[] visited = new boolean[g.numVertices()];
         qbfs.add(vert);
         qaux.add(vert);
         visited[g.getKey(vert)] = true;
@@ -52,18 +52,39 @@ public class GraphAlgorithms {
    * @param qdfs queue with vertices of depth-first search
    */
     private static<V,E> void DepthFirstSearch(Graph<V,E> g, V vOrig, boolean[] visited, LinkedList<V> qdfs){
-  
-        throw new UnsupportedOperationException("Not supported yet.");
+        qdfs.add(vOrig);
+        visited[g.getKey(vOrig)] = true;
+        for (V vAdj : g.adjVertices(vOrig)){
+            if (!visited[g.getKey(vAdj)]){
+                DepthFirstSearch(g, vAdj, visited, qdfs);
+            }
+        }
     }  
   
    /**
    * @param g Graph instance
-   * @param vInf information of the Vertex that will be the source of the search
+   * @param vert information of the Vertex that will be the source of the search
    * @return qdfs a queue with the vertices of depth-first search 
    */
     public static<V,E> LinkedList<V> DepthFirstSearch(Graph<V,E> g, V vert){
-    
-        throw new UnsupportedOperationException("Not supported yet.");
+        if (!g.validVertex(vert)){
+            return null;
+        }
+
+        LinkedList<V> qdfs =  new LinkedList<>();
+        boolean[] visited = new boolean[g.numVertices()];
+        qdfs.add(vert);
+        visited[g.getKey(vert)] = true;
+        for (V vAdj : g.adjVertices(vert)){
+            if (!g.validVertex(vAdj)){
+                return null;
+            }
+
+            if (!visited[g.getKey(vAdj)]){
+                DepthFirstSearch(g, vAdj, visited, qdfs);
+            }
+        }
+        return qdfs;
     }
    
     /**
