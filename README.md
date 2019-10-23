@@ -8,4 +8,7 @@ This repository contains my personal resolutions for the proposed exercises on t
 - All the projects were made within IntelliJ IDEA 2019.2.3 (Ultimate Edition).
 - The projects subject to evaluation will only be available after the presentation.
 - There might be a lack of documentation.
-- Feel free to use them and learn from them. 
+- Feel free to use them and learn from them.
+
+## Notes
+- The resolutions about PL4 will only be available after the release of the PL5 exercise sheet
