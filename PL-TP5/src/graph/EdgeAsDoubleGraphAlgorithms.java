@@ -19,8 +19,27 @@ public class EdgeAsDoubleGraphAlgorithms {
      * @param minDist minimum distances in the path
      *
      */
-    private static <V> void shortestPath(AdjacencyMatrixGraph<V,Double> graph, int sourceIdx, boolean[] knownVertices, int[] verticesIndex, double [] minDist){  
-        throw new UnsupportedOperationException("Not supported yet.");
+    private static <V> void shortestPath(AdjacencyMatrixGraph<V,Double> graph, int sourceIdx, boolean[] knownVertices, int[] verticesIndex, double [] minDist){
+        minDist[sourceIdx] = 0;
+        while (sourceIdx != -1) {
+            knownVertices[sourceIdx] = true;
+            for (V vAdj : graph.directConnections(graph.vertices.get(sourceIdx))) {
+                int vAdjIndex = graph.toIndex(vAdj);
+                if (!knownVertices[vAdjIndex] && minDist[vAdjIndex] > (minDist[sourceIdx] + graph.getEdge(graph.vertices.get(sourceIdx), vAdj))) {
+                    minDist[vAdjIndex] = minDist[sourceIdx] + graph.getEdge(graph.vertices.get(sourceIdx), vAdj);
+                    verticesIndex[vAdjIndex] = sourceIdx;
+                }
+            }
+            sourceIdx = -1;
+            Double minDistance = Double.MAX_VALUE;
+            for (V vert : graph.vertices) {
+                int vertIndex = graph.toIndex(vert);
+                if (!knownVertices[vertIndex] && minDist[vertIndex] < minDistance) {
+                    sourceIdx = vertIndex;
+                    minDistance = minDist[vertIndex];
+                }
+            }
+        }
     }
 
     /**
@@ -54,7 +73,7 @@ public class EdgeAsDoubleGraphAlgorithms {
         }
 
         shortestPath(graph, sourceIdx, knownVertices, verticesIndex, minDist); 
-        if (knownVertices[destIdx] == false) 
+        if (!knownVertices[destIdx])
             return -1;
 
         recreatePath(graph,sourceIdx,destIdx,verticesIndex,path); 
@@ -77,7 +96,7 @@ public class EdgeAsDoubleGraphAlgorithms {
      * @param sourceIdx Source vertex 
      * @param destIdx Destination vertices
      * @param verticesIndex index of vertices in the minimum path
-     * @param Queue Vertices in the path (empty if no path)
+     * @param path Vertices in the path (empty if no path)
      */
     private static <V> void recreatePath(AdjacencyMatrixGraph<V, Double> graph, int sourceIdx, 
                                            int destIdx, int[] verticesIndex, LinkedList<V> path){

@@ -175,8 +175,19 @@ public class AdjacencyMatrixGraph<V, E> implements BasicGraph<V, E>, Cloneable {
      * @return collection of vertices connected to vertex, null if vertex 
      * does not exist in the graph
      */
-    public Iterable<V> directConnections(V vertex) {       
-        throw new UnsupportedOperationException("Not supported yet.");	
+    public Iterable<V> directConnections(V vertex) {
+        ArrayList<V> directVertex = new ArrayList<>();
+        int vertIndex = this.toIndex(vertex);
+        if (vertIndex == -1){
+            return null;
+        }
+        for (int i = 0; i < edgeMatrix[vertIndex].length; i++){
+            if (edgeMatrix[vertIndex][i] != null){
+                directVertex.add(this.vertices.get(i));
+            }
+        }
+
+        return directVertex;
     }
 
 	
@@ -188,16 +199,18 @@ public class AdjacencyMatrixGraph<V, E> implements BasicGraph<V, E>, Cloneable {
      * not exist in the graph
      */
     public Iterable<E> outgoingEdges(V vertex) {
-        if (!this.checkVertex(vertex)){
-            return null;
-        }
         ArrayList<E> outEdges = new ArrayList<>();
         int vertIndex = this.toIndex(vertex);
+        if (vertIndex == -1){
+            return null;
+        }
         for (int i = 0; i < edgeMatrix[vertIndex].length; i++){
-            if (edgeMatrix[vertIndex])
+            if (edgeMatrix[vertIndex][i] != null){
+                outEdges.add(edgeMatrix[vertIndex][i]);
+            }
         }
 
-        return ;
+        return outEdges;
     }
 
     /**

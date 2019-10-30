@@ -59,7 +59,25 @@ public class GraphAlgorithms {
      * @return queue of vertices found by search (empty if none), null if vertex does not exist
      */
     public static <V,E> LinkedList<V> DFS(AdjacencyMatrixGraph<V,E> graph, V vertex) {
-     throw new UnsupportedOperationException("Not supported yet.");	
+        if (!graph.checkVertex(vertex)) {
+            return null;
+        }
+
+        LinkedList<V> qdfs = new LinkedList<>();
+        boolean[] visited = new boolean[graph.numVertices()];
+        qdfs.add(vertex);
+        visited[graph.toIndex(vertex)] = true;
+        for (V vAdj : graph.directConnections(vertex)) {
+            if (!graph.checkVertex(vAdj)) {
+                return null;
+            }
+
+            if (!visited[graph.toIndex(vAdj)]) {
+                DFS(graph, graph.toIndex(vAdj), visited, qdfs);
+            }
+        }
+        return qdfs;
+
     }
 
     /**
@@ -72,7 +90,13 @@ public class GraphAlgorithms {
      *
      */
     static <V,E> void DFS(AdjacencyMatrixGraph<V,E> graph, int index, boolean[] knownVertices, LinkedList<V> verticesQueue) {
-    		throw new UnsupportedOperationException("Not supported yet.");	
+        verticesQueue.add(graph.vertices.get(index));
+        knownVertices[index] = true;
+        for (V vAdj : graph.directConnections(graph.vertices.get(index))) {
+            if (!knownVertices[graph.toIndex(vAdj)]) {
+                DFS(graph, graph.toIndex(vAdj), knownVertices, verticesQueue);
+            }
+        };
     }
     
 
@@ -85,7 +109,22 @@ public class GraphAlgorithms {
      * @return the new graph 
      */
     public static <V, E> AdjacencyMatrixGraph<V, E> transitiveClosure(AdjacencyMatrixGraph<V, E> graph, E dummyEdge){
-            throw new UnsupportedOperationException("Not supported yet.");	
+        AdjacencyMatrixGraph<V, E> transitiveClosureGraph;
+        transitiveClosureGraph = (AdjacencyMatrixGraph<V, E>) graph.clone();
+
+        for (int k = 0; k < graph.numVertices; k++){
+            for (int i = 0; i < graph.numVertices; i++){
+                if (i != k && transitiveClosureGraph.edgeMatrix[i][k] != null){
+                    for (int j = 0; j < graph.numVertices; j++){
+                        if (i != j && k != j && transitiveClosureGraph.edgeMatrix[k][j] != null){
+                            transitiveClosureGraph.edgeMatrix[i][j] = dummyEdge;
+                        }
+                    }
+                }
+            }
+        }
+
+        return transitiveClosureGraph;
     }
 
 }

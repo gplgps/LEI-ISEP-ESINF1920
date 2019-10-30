@@ -165,7 +165,28 @@ public class GraphAlgorithmsTest {
 
 	@Test
 	public void testTransitiveClosure() {
-		fail("Not implemented yet.");	
+    	AdjacencyMatrixGraph<String, String> newMap = GraphAlgorithms.transitiveClosure(incompleteMap, "virtual");
+    	assertTrue("Viseu has two connections", newMap.outDegree("Viseu") == 2);
+    	Iterator<String> it = newMap.directConnections("Viseu").iterator();
+
+    	assertTrue("Viseu should connect with Guarda", it.next().compareTo("Guarda") == 0);
+    	assertTrue("Viseu should connect with Castelo Branco", it.next().compareTo("Castelo Branco") == 0);
+
+
+
+
+
+		//AdjacencyMatrixGraph<String , String> expected;
+		//expected = (AdjacencyMatrixGraph<String, String>) completeMap.clone();
+		//for (int i = 0; i < expected.numVertices; i++){
+		//	for (int j = 0; j < expected.numVertices; j++){
+		//		if (expected.edgeMatrix[i][j] == null){
+		//			expected.edgeMatrix[i][j] = "LIGA";
+		//		}
+		//	}
+		//}
+		//AdjacencyMatrixGraph<String , String> result = GraphAlgorithms.transitiveClosure(completeMap, "LIGA");
+    	//assertEquals(expected, result);
 	}
 
 }
