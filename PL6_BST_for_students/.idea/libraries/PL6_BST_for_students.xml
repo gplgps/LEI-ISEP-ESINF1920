@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="PL6_BST_for_students">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/PL6_BST_for_students.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

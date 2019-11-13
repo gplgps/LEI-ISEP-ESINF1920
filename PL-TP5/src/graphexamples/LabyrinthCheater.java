@@ -115,6 +115,7 @@ public class LabyrinthCheater {
      * @param room from room
      * @return list of room names or null if from room does not exist or there is no reachable exit
      */
+    /*
     public LinkedList<String> pathToExit(String from) {
         if (!map.checkVertex(new Room(from))) return null;
 
@@ -140,5 +141,6 @@ public class LabyrinthCheater {
         }
         return names;
     }
+    */
 
 }
