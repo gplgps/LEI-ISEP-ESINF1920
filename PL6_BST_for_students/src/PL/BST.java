@@ -217,8 +217,8 @@ public class BST<E extends Comparable<E>> implements BSTInterface<E> {
      */
     protected Node<E> find(E element, Node<E> node){
         if (node == null) return null;
-        if (element.compareTo(node.getLeft().getElement()) == 0) return node;
-        if (element.compareTo(node.getLeft().getElement()) > 0) return find(element, node.getLeft());
+        if (element.compareTo(node.getElement()) == 0) return node;
+        if (element.compareTo(node.getElement()) < 0) return find(element, node.getLeft());
         return find(element, node.getRight());
     }
     

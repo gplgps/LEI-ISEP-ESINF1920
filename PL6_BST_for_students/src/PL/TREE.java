@@ -39,7 +39,7 @@ public class TREE<E extends Comparable<E>> extends BST<E>{
         return false;
     }
 
-   /*
+   /**
    * build a list with all elements of the tree. The elements in the 
    * left subtree in ascending order and the elements in the right subtree 
    * in descending order. 
@@ -70,12 +70,12 @@ public class TREE<E extends Comparable<E>> extends BST<E>{
     
     private void desSubtree(Node<E> node, List<E> snapshot) {
         if (node == null) return;
-        if (node.getLeft() != null){
-            desSubtree(node.getLeft(), snapshot);
-        }
-        snapshot.add(node.getElement());
         if (node.getRight() != null){
             desSubtree(node.getRight(), snapshot);
+        }
+        snapshot.add(node.getElement());
+        if (node.getLeft() != null){
+            desSubtree(node.getLeft(), snapshot);
         }
     }
    
@@ -84,22 +84,31 @@ public class TREE<E extends Comparable<E>> extends BST<E>{
     * @return tree without leaves
     */
     public BST<E> autumnTree() {
-           throw new UnsupportedOperationException("Not supported yet.");
+        TREE<E> autumnTree = new TREE<>();
+        autumnTree.root = copyRec(this.root);
+        return autumnTree;
     }
     
     private Node<E> copyRec(Node<E> node){
-           throw new UnsupportedOperationException("Not supported yet.");
+        if (node == null) return null;
+        if (!isLeaf(node.getElement())) return new Node<>(node.getElement(), copyRec(node.getLeft()), copyRec(node.getRight()));
+        return null;
     }
     
     /**
     * @return the the number of nodes by level.
     */
     public int[] numNodesByLevel(){
-        throw new UnsupportedOperationException("Not supported yet.");
+        int[] nodesByLevel = new int[this.height() + 1];
+        numNodesByLevel(root, nodesByLevel, 0);
+        return nodesByLevel;
     }
     
     private void numNodesByLevel(Node<E> node, int[] result, int level){
-        throw new UnsupportedOperationException("Not supported yet.");
+        if (node == null) return;
+        result[level]++;
+        numNodesByLevel(node.getLeft(), result, level + 1);
+        numNodesByLevel(node.getRight(), result, level + 1);
     }
 
 }
