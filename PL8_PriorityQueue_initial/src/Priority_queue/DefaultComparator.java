@@ -1,0 +1,31 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Priority_queue;
+
+import java.util.Comparator;
+
+/**
+ * Comparator based on the compareTo method of a Comparable element type.
+ *
+ * @author Michael T. Goodrich
+ * @author Roberto Tamassia
+ * @author Michael H. Goldwasser
+ */
+public class DefaultComparator<E> implements Comparator<E> {
+
+    /**
+     * Compares two elements.
+     *
+     * @return a negative integer if <tt>a</tt> is less than <tt>b</tt>,
+     * zero if <tt>a</tt> equals <tt>b</tt>, or a positive integer if
+     * <tt>a</tt> is greater than <tt>b</tt>
+     */
+    @SuppressWarnings({"unchecked"})
+    public int compare(E a, E b) throws ClassCastException {
+        return ((Comparable<E>) a).compareTo(b);
+    }
+
+}
